@@ -1,0 +1,36 @@
+// Nesting of member function in C++
+#include<iostream.h>
+#include<conio.h>
+class greater
+{
+int m,n;
+public:
+	void input(void);
+	void display(void);
+	int largest(void);
+};
+int greater::largest(void)
+{
+if(m>n)
+	return(m);
+	else
+	return(n);
+}
+void greater::input(void)
+{
+cout<<"Input value of m and n"<<"\n";
+cin>>m>>n;
+}
+void greater::display(void)
+{
+cout<<"Largest value = "<<largest()<<"\n";	//Calling of function within function called Nesting of Member function.
+}
+int main()
+{
+	clrscr();
+	greater A;
+	A.input();	//calling
+	A.display();	//calling
+	getch
+	;
+}
